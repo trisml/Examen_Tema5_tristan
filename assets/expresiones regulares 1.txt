@@ -1,0 +1,12 @@
+nombre /^[a-zA-Z0-9]*$/
+correo /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+matricula /^\d{4}\s[A-Z]{3}$/
+telefono /^\d{9}$/
+dni /^\d{8}[A-Z]$/i/
+fecha /^\d{4}-\d{2}-\d{2}$/      /^(\d{2})-(\d{2})-(\d{4})$/
+codigo postal /^\d{5}$/
+
+
+
+
+

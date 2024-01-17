@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/Johan Christian Dahl - Northern Landscape 1822  - (MeisterDrucke-52329).ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container-imagen">
+        <h1>Puxa Asturias</h1>
+        <span>Viva Asturies Carayo</span>
+
+    </div>
+    <div class="container-formulario">
+        
+        <form action="envioCorrecto.html" method="get" id="formulario" class="container-flex">
+            <h1>Contáctanos</h1>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="campo">
+            <input type="text" name="correo" id="correo" placeholder="Correo Electronico" class="campo"> 
+            <label for="info1">Solicitar información</label>
+            <input type="radio" name="info1">
+            <label for="info2">Reservar:</label>
+            <input type="radio" name="info2">
+            <input type="button" value="Info" id="informacion" class="btn">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Por favor, escriba su mensaje" class="campo"></textarea>
+            <input type="submit" id="enviar" value="Enviar" class="btn">
+            <ul id="mensajesError"></ul>
+        </form>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
