@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="container-imagen">
+        <div class="container-imagen-2">
         <h1>Puxa Asturias</h1>
         <span>Viva Asturies Carayo</span>
-
+    </div>
     </div>
     <div class="container-formulario">
         
@@ -20,14 +21,15 @@
             <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="campo">
             <input type="text" name="correo" id="correo" placeholder="Correo Electronico" class="campo"> 
             <label for="info1">Solicitar información</label>
-            <input type="radio" name="info1" checked>
+            <input type="radio" name="info" id="info1" checked>
             <label for="info2">Reservar:</label>
-            <input type="radio" name="info2">
+            <input type="radio" name="info" id="info2">
             <input type="button" value="Info" id="informacion" class="btn">
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Por favor, escriba su mensaje" class="campo"></textarea>
             <input type="submit" id="enviar" value="Enviar" class="btn">
-            <ul id="mensajesError"></ul>
+            
         </form>
+        <ul id="mensajesError"></ul>
     </div>
 
     <script src="/js/script.js"></script>
