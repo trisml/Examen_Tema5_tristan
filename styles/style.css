@@ -4,10 +4,43 @@
     box-sizing: border-box;
     font-family: 'Tristan';
 }
+body{
+    background-color:rgb(62, 112, 112);
+}
 @font-face {
     font-family: 'Tristan';
     src: url(/assets/Kanit-BoldItalic.ttf);
 }
+:root{
+    --h1-font-size: 3rem;
+    --input-width: 15rem;
+    --input-btn-heigth: 2.75rem;
+    --span-font-size: 1.5rem;
+    --btn-width: 7rem;
+    --form-width: 35rem;
+}
+@media (max-width:415px){
+    :root{
+    --h1-font-size: 0.5rem;
+    --input-width: 8rem;
+    --input-btn-heigth: 2rem;
+    --span-font-size: 0.2rem;
+    --btn-width: 4rem;
+    --form-width: 15rem;
+    }
+}
+@media (max-width:610px) and (min-width:425px){
+    :root{
+    --h1-font-size: 2.5rem;
+    --input-width: 11rem;
+    --input-btn-heigth: 2.4rem;
+    --span-font-size: 1.2rem;
+    --btn-width: 5.5rem;
+    --form-width: 22rem;
+    }
+
+}
+
 .container-imagen{
     display: flex;
     align-items: center;
@@ -16,6 +49,7 @@
     background: url(/assets/Johan\ Christian\ Dahl\ -\ Northern\ Landscape\ 1822\ \ -\ \(MeisterDrucke-52329\).jpg) center/cover;
     position: relative;
     color:white;
+    clip-path: ellipse(43% 26% at 49% 48%);
 }
 .container-imagen::before{
     content: "";
@@ -31,22 +65,23 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+    
 }
 .container-flex{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 35rem;
+    width: var(--form-width);
     padding: 5rem;
     gap: 1.5rem;
     margin: 5rem;
     border: 3px solid black;
     background: rgb(0, 0, 0);
     border-radius: 4%;
+    box-shadow: 4px 3px 4px rgb(255, 255, 255);
 }
 .container-formulario{
-    background-color:rgb(62, 112, 112);
     color:white;
     display:flex;
     align-items: center;
@@ -55,16 +90,37 @@
 }
 
 .campo{
-    width: 15rem;
-    height: 2.75rem;
-    background: rgb(196, 188, 188);
-    border: 4px solid white;
+    width: var(--input-width);
+    height: var(--input-btn-heigth);
+    background: rgb(255, 255, 255);
+    border: 4px solid rgb(196, 187, 187);
     border-radius: 5%;
+    text-align: center;
+    
+    
 }
 
+
 .btn{
-    width: 7rem;
-    height: 2.75rem;
-    border-radius: 15%
+    width: var(--btn-width);
+    height: var(--input-btn-heigth);
+    border-radius: 15%;
+    background-color: rgb(62, 112, 112);
+    color:white;
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+}
+.btn:hover{
+    width: calc(var(--btn-width) * 1.2);
+    height: calc(var(--input-btn-heigth) * 1.2);
+    cursor:pointer;
+}
+h1{
+    font-size: var(--h1-font-size);
+}
+span{
+    font-size: var(--span-font-size)
+}
+ul{
+    color:red;
 }
 

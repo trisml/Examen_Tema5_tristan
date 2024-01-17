@@ -18,7 +18,7 @@ const validacion = evento => {
     !/^[a-zA-Z]*$/.test(nombre.value.trim()) && mensajesError.push("Introduzca un nombre valido")
 
     !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(correo.value.trim()) && mensajesError.push("Introduzca un correo electronico valido")
-
+    mensaje.value.trim().length < 10 && mensajesError.push('Mensaje demasiado corto')
     if(mensajesError.length === 0 && confirm("¿Estas seguro de enviar el formulario?")){
         formulario.submit()
     }else if(mensajesError.length > 0){

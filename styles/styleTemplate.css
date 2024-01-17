@@ -1,0 +1,8 @@
+.imagen{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/assets/Johan\ Christian\ Dahl\ -\ Northern\ Landscape\ 1822\ \ -\ \(MeisterDrucke-52329\).jpg) center/cover;
+    width: 100%;
+    height: 100vh;
+}
